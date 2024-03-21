@@ -5,6 +5,7 @@ const getUsers = async () => {
   return users;
 };
 
+//Example
 const users = getUsers();
 
 //POST Method
@@ -18,13 +19,14 @@ const createUser = async (contenido) => {
   };
   await fetch("https://jsonplaceholder.typicode.com/users", package);
 };
+
+//Example
 const usuario = {
   name: "Leanne Graham",
   username: "Bret",
   email: "",
   id: 1,
 };
-
 createUser(usuario);
 
 //-----------------------------------------------------
@@ -44,6 +46,7 @@ const updateUser = async (contenido) => {
   );
 };
 
+//Example
 updateUser(usuario);
 
 //-----------------------------------------------------
@@ -55,6 +58,7 @@ const deleteUser = async (id) => {
   await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, package);
 };
 
+//Example
 deleteUser(1);
 
 //-----------------------------------------------------
